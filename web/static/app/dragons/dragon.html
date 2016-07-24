@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-md-4">
+      <div class="character-card">
+          <div class="character-icon">
+              <img class="img-responsive"
+              ng-src="assests/images/thumbnail/{{dragon.secret.images.thumbnail}}"
+              alt="" />
+          </div>
+          <div class="character-title">
+              {{dragon.secret.name}}
+          </div>
+          <div class="character-specs">
+              <span>Class: {{dragon.secret.class}}</span>
+          </div>
+          <hr class="divider">
+      </div>
+        <char-details data="dragon.secret.details">
+
+        </char-details>
+    </div>
+    <div class="col-md-8">
+        <img class="img-responsive"
+        ng-src="assests/images/hero/{{dragon.secret.images.hero}}"
+        alt="{{dragon.secret.name}}" />
+    </div>
+</div>
+<div class="row about-card">
+    <div class="col-md-7">
+        <about data="dragon.secret.about">
+
+        </about>
+    </div>
+    <div class="col-md-5">
+        <relationShips data="dragon.secret.relationShips">
+
+        </relationShips>
+    </div>
+</div>

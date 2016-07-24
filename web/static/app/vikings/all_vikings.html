@@ -1,0 +1,9 @@
+<div class="row characters-cards">
+    <div class="col-md-3 card" data-ng-repeat="viking in vikings.all">
+      <a ui-sref="viking({vikingId:viking.vikingId})">
+        <img class="img-responsive"
+        ng-src="assests/images/hero/{{viking.images.hero}}" alt="{{viking.name}}">
+        <h2 class="title">{{viking.name}}</h2>
+      </a>
+    </div>
+</div>

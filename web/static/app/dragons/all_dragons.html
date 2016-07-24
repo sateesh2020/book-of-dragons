@@ -1,0 +1,9 @@
+<div class="row characters-cards">
+    <div class="col-md-3 card" data-ng-repeat="dragon in dragons.all">
+      <a ui-sref="dragon({dragonId:dragon.dragonId})" >
+        <img class="img-responsive"
+        ng-src="assests/images/hero/{{dragon.images.hero}}" alt="{{dragon.name}}">
+        <h2 class="title">{{dragon.name}}</h2>
+      </a>
+    </div>
+</div>

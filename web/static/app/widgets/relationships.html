@@ -1,0 +1,18 @@
+<div class="relationships">
+    <div class="list-group">
+        <div class="row list-group-item" data-ng-repeat="relationship in relationship.data">
+            <div class="col-md-4 thumbnail">
+                <img class="img-responsive"
+                  ng-src="assests/images/thumbnail/{{relationship.thumbnail}}" alt="Toothless">
+            </div>
+            <div class="col-md-offset-1 col-md-7 info">
+                <span class="title">
+                    {{relationship.name}}
+                </span>
+                <span class="sub">
+                    {{relationship.description}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

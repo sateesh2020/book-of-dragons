@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-4">
+      <div class="character-card">
+          <div class="character-icon">
+              <img class="img-responsive"
+              ng-src="assests/images/thumbnail/{{viking.secret.images.thumbnail}}"
+              alt="" />
+          </div>
+          <div class="character-title">
+              {{viking.secret.name}}
+          </div>
+          <div class="character-specs">
+              <span>Full Name: {{viking.secret.fullName}}</span>
+              <span>Tribe: {{viking.secret.tribe}}</span>
+          </div>
+          <hr class="divider">
+      </div>
+        <char-details data="viking.secret.details">
+
+        </char-details>
+    </div>
+    <div class="col-md-8">
+        <img class="img-responsive"
+        ng-src="assests/images/hero/{{viking.secret.images.hero}}"
+        alt="{{viking.secret.name}}" />
+    </div>
+</div>
+<div class="row about-card">
+    <div class="col-md-7">
+        <about data="viking.secret.about">
+
+        </about>
+    </div>
+    <div class="col-md-5">
+        <relationShips data="viking.secret.relationShips">
+
+        </relationShips>
+    </div>
+</div>
