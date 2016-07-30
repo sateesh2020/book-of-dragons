@@ -21,12 +21,13 @@
         var viking = this;
         if($stateParams.vikingId){
             var vikingId = $stateParams.vikingId;
+            callViking(vikingId);
         }
 
         function callViking(vikingId){
           return VikingFactory.getVikingDetails(vikingId).then(function(response){
               if(response.success){
-                viking.details = response.viking;
+                viking.secret = response.viking;
               }
           });
         }
