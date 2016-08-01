@@ -43,6 +43,10 @@ body {
     text-align: center;
     font-size: 16px;
 }
+.character-details .list-group-item{
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
 .about-card .about .character-about-title {
     color: rgb(190, 190, 190);
     font-size: 88px;
@@ -64,6 +68,11 @@ body {
 .about-card .relationships {
     margin-top: 50px;
 }
+
+.about-card .relationships .list-group .list-group-item {
+    margin-bottom: 15px;
+}
+
 .about-card .relationships .thumbnail {
     float: left;
 }
@@ -96,6 +105,11 @@ body {
 .characters-cards {
     padding: 20px 0px;
 }
+
+.characters-cards .card {
+    margin-bottom: 20px;
+}
+
 .characters-cards .card a {
     display: block;
     border-width: 1px 1px 5px;

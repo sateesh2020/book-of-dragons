@@ -3,7 +3,7 @@ var Viking     = require('../models/viking');
 function getAllVikings(req,res){
   console.log('Lisiting down all vikings');
   var response = {};
-  Viking.find({}, function(err, vikings){
+  Viking.find({},'vikingId name images', function(err, vikings){
       if(!err){
         response.success = true;
         response.vikings = vikings;

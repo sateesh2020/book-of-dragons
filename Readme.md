@@ -1,6 +1,6 @@
 ## Book of Dragons - Docker Application
 
-Book of Dragons is a Web Application of Dragons and Vikings Wiki Data from the famous TV Series How to Train your Dragon
+Book of Dragons is a Web Application of Dragons and Vikings Wiki Data from the famous TV Series DreamWorks Dragons
 
 How to Train Your Dragon is a 2010 American 3D computer-animated action-fantasy film produced by DreamWorks Animation and distributed by Paramount Pictures.1 Loosely based on the British book series of the same name by Cressida Cowell
 
