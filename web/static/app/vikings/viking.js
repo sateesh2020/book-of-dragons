@@ -45,7 +45,7 @@
 
         function getAllVikings() {
             var request = {
-                url: API.URL + API.GET_ALL_VIKINGS,
+                url: API.GET_ALL_VIKINGS,
                 method: 'GET'
             };
             return httpi(request)
@@ -61,7 +61,7 @@
 
         function getVikingDetails(vikingId) {
             var request = {
-                url: API.URL + API.GET_VIKING_DETAILS,
+                url: API.GET_VIKING_DETAILS,
                 method: 'GET',
                 params: {
                     id: vikingId

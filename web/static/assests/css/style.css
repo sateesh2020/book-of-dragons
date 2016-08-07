@@ -3,6 +3,7 @@ body {
     padding: 0;
     background: #ebebeb;
 }
+
 .custom-nav {
     height: 130px;
 }
@@ -29,6 +30,13 @@ body {
 .main {
     margin-top: 135px;
     padding: 20px;
+}
+.home-hero img{
+
+}
+.home-hero .overlay{
+  position: absolute;
+  top: 45%;
 }
 .character-card .character-icon {
     margin: 0 auto;

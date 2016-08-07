@@ -1,4 +1,5 @@
-var Dragon     = require('../models/dragon');
+var Dragon      = require('../models/dragon');
+var dragonsData = require('../mocks/dragons');
 
 function getAllDragons(req,res){
   console.log('Lisiting down all dragons');
@@ -31,6 +32,21 @@ function getDragonDetails(req,res){
     });
 }
 
+function recordAllDragons(req,res){
+  var response = {};
+  Dragon.collection.insertMany(dragonsData, function(err,response) {
+      if(!err){
+        response.success = true;
+        response.message = 'All Dragons are recorded';
+      }else{
+        response.success = false;
+        response.message = 'Error while recording dragons';
+        response.error   = err;
+      }
+      return res.send(response);
+  });
+}
+
 function saveDragonDetails(req,res){
   var dragon = req.body;
   var NewDragon = new Dragon(dragon);
@@ -51,5 +67,6 @@ function saveDragonDetails(req,res){
 module.exports = {
     getAllDragons     :getAllDragons,
     getDragonDetails  :getDragonDetails,
-    saveDragonDetails :saveDragonDetails
+    saveDragonDetails :saveDragonDetails,
+    recordAllDragons  :recordAllDragons
 };

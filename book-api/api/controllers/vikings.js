@@ -1,4 +1,5 @@
-var Viking     = require('../models/viking');
+var Viking        = require('../models/viking');
+var vikingsData   = require('../mocks/vikings');
 
 function getAllVikings(req,res){
   console.log('Lisiting down all vikings');
@@ -34,6 +35,21 @@ function getVikingDetails(req,res){
     });
 }
 
+function recordAllVikings(req,res){
+  var response = {};
+  Viking.collection.insertMany(vikingsData, function(err,response) {
+      if(!err){
+        response.success = true;
+        response.message = 'All Vikings are recorded';
+      }else{
+        response.success = false;
+        response.message = 'Error while recording vikings';
+        response.error   = err;
+      }
+      return res.send(response);
+  });
+}
+
 function saveVikingDetails(req,res){
   var viking = req.body;
   var NewViking = new Viking(viking);
@@ -55,5 +71,6 @@ function saveVikingDetails(req,res){
 module.exports = {
     getAllVikings     :getAllVikings,
     getVikingDetails  :getVikingDetails,
-    saveVikingDetails :saveVikingDetails
+    saveVikingDetails :saveVikingDetails,
+    recordAllVikings  :recordAllVikings
 };

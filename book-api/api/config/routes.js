@@ -17,11 +17,15 @@ module.exports = function(app) {
 
     router.get('/dragons',dragonController.getAllDragons);
 
+    router.get('/dragons/record',dragonController.recordAllDragons);
+
     router.get('/dragons/:id',dragonController.getDragonDetails);
 
     router.post('/dragons',dragonController.saveDragonDetails);
 
     router.get('/vikings',vikingController.getAllVikings);
+
+    router.get('/vikings/record',vikingController.recordAllVikings);
 
     router.get('/vikings/:id',vikingController.getVikingDetails);
 

@@ -44,7 +44,7 @@
 
         function getAllDragons() {
             var request = {
-                url: API.URL + API.GET_ALL_DRAGONS,
+                url: API.GET_ALL_DRAGONS,
                 method: 'GET'
             };
             return httpi(request)
@@ -60,7 +60,7 @@
 
         function getDragonDetails(dragonId) {
             var request = {
-                url: API.URL + API.GET_DRAGON_DETAILS,
+                url: API.GET_DRAGON_DETAILS,
                 method: 'GET',
                 params: {
                     id: dragonId

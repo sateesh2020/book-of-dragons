@@ -5,7 +5,8 @@
                 $urlRouterProvider.otherwise('/vikings');
                 $stateProvider
                     .state('home', {
-                        url: '/home'
+                        url: '/home',
+                        templateUrl:'app/home/home.html'
                     })
                     .state('vikings', {
                         url: '/vikings',

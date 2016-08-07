@@ -2,7 +2,7 @@ var app                 = require('express')();
 var bodyParser          = require('body-parser');
 var mongoose            = require('mongoose');
 var dbName              = 'bookOfDragons';
-var dbUrl               = 'mongodb://127.0.0.1:27017/'+dbName;
+var dbUrl               = 'mongodb://mongo:27017/'+dbName;
 
 module.exports = app; // for testing
 
